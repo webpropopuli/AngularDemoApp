@@ -1,0 +1,28 @@
+<div class ="container color-dark">
+  <div class="col">
+    <p> Add list item </p>
+  </div>
+  <div class="col">
+    <p>(items = {{itemCount}})</p>
+  </div>
+</div>
+
+<div class ="container color-light">
+  <div class="col">
+    <p class="sm">Fill in to add new item</p>
+
+    <form>
+      <input type="text" class="text" name="item" [(ngModel)]="goalText">
+      <br><span>{{ goalText }}&nbsp;</span>
+      <input type="submit" class="btn" [value]="addBtnText" (click)="addItem()">
+    </form>
+  </div>
+  <div class="col">
+    <p class="life-container" *ngFor="let goal of goals">
+      {{goal}}
+    </p>
+  </div>
+</div>
+
+
+

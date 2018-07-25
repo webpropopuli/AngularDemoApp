@@ -1,0 +1,37 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.col {  padding: .4em 1.3em;  }
+
+.color-dark {  background: #2888c0;}
+.color-light {  background: #58b0f0;}
+
+.myMenu li{
+    padding : 3em;
+}
+input.txt {
+    border: 0;
+    padding: 1em;
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+input.btn {
+    display: block;
+    color: green;
+    background: yellow;
+    border: 1px solid silver;
+    cursor: pointer;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+}
+
+.life-container {
+    background: #40A0E0;
+    padding: .5em;
+    font-weight: bold;
+    cursor: pointer;
+}
